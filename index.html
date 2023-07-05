@@ -13,17 +13,29 @@
     <header class="header">
       <img class="header__img" src="./images/Vector.png" alt="logo de alura" />
     </header>
+
     <main class="main">
       <section class="main__section1">
         <textarea name="board" class="main__section-1-text" cols="30" rows="10">
-        Ingrese su texto aquí</textarea
-        >
+          Ingrese su texto aquí</textarea>
+        <div class="main__section1-textoencima">
+          Solo letras minisculas y sin acento
+        </div>
         <div class="main__section1-div">
-          <button class="main__section1-div-button-1">Encriptar</button>
-          <button class="main__section1-div-button-2">Desencriptar</button>
+          <button class="main__section1-div-button-1" onclick="encryptButton()">Encriptar</button>
+          <button class="main__section1-div-button-2" onclick="decryptButton()">Desencriptar</button>
         </div>
       </section>
-      <section class="main__section2"></section>
+      <section class="main__section2" id="main__section2">
+        <img class="images" src="./images/Muñeco.png" alt="Muñeco" />
+        <div class="mensaje_1">Ningun mensaje fue encriptado</div>
+        <div class="mensaje_2">Ingrese el texto que desea encriptar o desencriptar</div>
+      </section>    
+      
+      <div class="div-oculta" id="div-oculta">
+        <textarea class="textarea_2" name="text2" id="text2" cols="30" rows="10"></textarea>
+        <button class="div-oculta-button-3" onclick="copyButton()">Copiar</button>
+      </div>
     </main>
     <footer></footer>
     <script src="./javascript/main.js"></script>
